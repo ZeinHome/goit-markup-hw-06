@@ -263,19 +263,23 @@ ul {
     pointer-events: none;
 }
 
+.backdrop.is-hidden .modall {
+    transform: scale(0.9);
+}
+
 .modal {
     position: absolute;
     min-width: 528px;
     min-height: 581px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background: var(--bg-color);
     box-shadow: var(--shadow-card-team);
     border-radius: 4px;
     opacity: 1;
     visibility: visible;
-    transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function);
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 250ms var(--transition-timing-function), visibility 250ms var(--transition-timing-function), transform 250ms var(--transition-timing-function);
 }
 
 .button.close {
