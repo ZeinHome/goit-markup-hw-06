@@ -75,7 +75,7 @@
                                     <use href="./images/sprite.svg#icon-user">
                                     </use>
                                 </svg>
-                                <input class="form-input" type="text" name="name" id="name" placeholder="" />
+                                <input class="form-input" type="text" name="name" id="name" placeholder="" readonly="readonly" />
                             </div>
 
                             <label class="form-text" for="tel">Телефон</label>
@@ -84,13 +84,13 @@
                                     <use href="./images/sprite.svg#icon-contact">
                                     </use>
                                 </svg>
-                                <input class="form-input" type="tel" name="tel" id="tel" placeholder="" />
+                                <input class="form-input" type="tel" name="tel" id="tel" placeholder="" pattern="^[0-9]+$" />
                             </div>
 
                             <label class="form-text" for="email">Почта</label>
                             <div class="form-fied">
                                 <svg class="form-icon" width="15px" height="13px">
-                                    <use href="./images/sprite.svg#icon-vector-mail">
+                                    <use href="./images/sprite.svg#icon-formmail">
                                     </use>
                                 </svg>
                                 <input class="form-input" type="email" name="email" id="email" placeholder="" />
@@ -106,7 +106,7 @@
                 </label>
 
 
-                            <button class="button primary form-button">Отправить</button>
+                            <button type="submit" class="button primary form-button">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -379,11 +379,11 @@
     <footer class="footer">
         <div class="container footer-container">
 
-            <div>
+            <div class="footer-nav">
                 <a href="./index.html " class="logo">
                     <span class="logo-color ">Web</span><span class="white-logo ">Studio</span>
                 </a>
-                <address>
+                <address>   
                         <ul class="footer-contact">
                             <li class="address ">г. Киев, пр-т Леси Украинки, 26</li>
                             <li class="footer-contact-item "> <a href="mailto:info@example.com " class="footer-contact-link ">info@example.com</a></li>

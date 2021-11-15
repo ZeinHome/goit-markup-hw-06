@@ -224,7 +224,8 @@ ul {
 }
 
 .button.primary {
-    padding: 10px;
+    border: transparent;
+    padding: 10px 32px;
     background: var(--primary-button);
     box-shadow: var(--button-shadow);
     border-radius: 4px;
@@ -244,6 +245,11 @@ ul {
 
 
 /*  backdrop */
+
+input:invalid {
+    border-color: red;
+    box-shadow: none;
+}
 
 .backdrop {
     position: fixed;
@@ -302,13 +308,7 @@ ul {
 /* form */
 
 .form {
-    width: 448px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 40px;
 }
 
 .form-title {
@@ -363,6 +363,7 @@ ul {
 }
 
 .textarea {
+    display: block;
     resize: none;
     width: 100%;
     min-height: 120px;
@@ -391,7 +392,8 @@ ul {
 .contract {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    justify-content: center;
+    margin-top: 20px;
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
@@ -635,6 +637,10 @@ ul {
     align-items: baseline;
 }
 
+.footer-nav {
+    flex-grow: 1;
+}
+
 .white-logo {
     color: var(--color-hero);
 }
@@ -714,7 +720,6 @@ ul {
 
 .follow-button {
     display: flex;
-    min-width: 200px;
     align-items: center;
     justify-content: center;
     margin-left: 12px;
